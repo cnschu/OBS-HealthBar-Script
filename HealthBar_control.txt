@@ -1,0 +1,5 @@
+:current=100
+:mark=15
+:minimum=0
+:maximum=100
+:wounds=0
