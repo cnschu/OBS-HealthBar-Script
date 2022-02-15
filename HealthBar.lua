@@ -183,6 +183,10 @@ source_def.update = function(data, settings)
 	data.Woundposition	= obs.obs_data_get_string(settings, "lWoundposition")
 	data.WoundGap		= 10
 	
+	if data.tID:find("[:=]") then
+		data.tID = data.tID:gsub("[:=]","-")
+		obs.obs_data_set_string (settings, "tID", data.tID)
+	end
 
 	if data.WoundTyp == "slash" then
 		data.woundMarker = data.woundSlash
@@ -228,7 +232,6 @@ end
 
 function prop_change_callback(props, property, settings)
 	local typ = obs.obs_data_get_string(settings, "lTyp")
-	
 
 	obs.obs_property_set_visible(obs.obs_properties_get(props, "lColor"), 			typ == "bar" or typ == "onlybar" or typ=="bowl" )
 	obs.obs_property_set_visible(obs.obs_properties_get(props, "lWoundTyp"), 		typ == "bar" or typ == "wounds" )
