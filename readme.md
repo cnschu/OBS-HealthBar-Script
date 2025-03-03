@@ -1,6 +1,6 @@
 The Healthbar OBS Scrit provides an Source to dispay an lifebar / healthbar in your OBS Scenes.
 
-to use an bar:
+## Installation 
 1) unzip the script in an directory on your computer
 2) add the Script in OBS (Toosl / Scripts / +)
 3) write an control file as an plain text file or use the provided file HealthBar_control.txt
@@ -8,7 +8,6 @@ to use an bar:
 5) add the Source "Health Bar" to your Scene as often as you like
 
 Whenever you save the control-file, the Healthbar(s) will update.
-
 
 You can set the minimum to negative numbers
 
