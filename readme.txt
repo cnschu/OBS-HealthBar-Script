@@ -16,4 +16,6 @@ To use it for an Earthdawn or Star Wars Damagepoint System instead of a lifepoin
 set the maximum to 0 and the minimum to the limit (like -100 for a death rating of 100).
 Then count the damagepoint as negative numbers like 10 damage points are a current of -10.
 
-Mutiple bars with different values
+## multiple bars
+Mutiple bars with different values can be controlled by using ID strings.
+each set of values in the control .txt file corresponds to an Healthbar with the same ID.
